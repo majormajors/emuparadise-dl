@@ -1,0 +1,11 @@
+{
+  "manifest_version": 2,
+  "name": "Emuparadise-dl",
+  "description": "Enables downloading of ROMs from emuparadise",
+  "version": "1.0",
+  "content_scripts": [{
+    "js": ["download.js"],
+    "matches": ["https://www.emuparadise.me/*"],
+    "run_at": "document_start"
+  }]
+}
